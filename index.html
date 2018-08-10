@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="Калькулятор,Calculator">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="allcalc">
+      <div class="name">Calculator</div>
+      <form>
+        <input name="screen" id="display" type="text" placeholder="0" disabled>
+      
+      <div>
+         <table>
+          <tr>     
+            <td><input type="button" value="(" class="button stepl" onclick="screen.value+='('"></td>
+            <td><input type="button" value="7" class="button" onclick="screen.value+='7'"></td>
+            <td><input type="button" value="8" class="button" onclick="screen.value+='8'"></td>
+            <td><input type="button" value="9" class="button" onclick="screen.value+='9'"></td>
+            <td><input type="button" value="/" class="button stepr" onclick="screen.value+='/'"></td>
+            <td><input type="button" value="&#960;" class="button" onclick="screen.value+='3.1415926535'">
+           </tr>
+          
+           <tr> 
+            <td><input type="button" value=")" class="button stepl" onclick="screen.value+=')'"></td>
+            <td><input type="button" value="4" class="button" onclick="screen.value+='4'"></td>
+            <td><input type="button" value="5" class="button" onclick="screen.value+='5'"></td>
+            <td><input type="button" value="6" class="button" onclick="screen.value+='6'"></td>
+            <td><input type="button" value="*" class="button stepr" onclick="screen.value+='*'"></td>
+            <td><input type="button" value="-" class="button" onclick="screen.value+='-'"></td>
+           </tr>
+           <tr>
+            <td><input type="button" value="&#8592;" class="button stepl" onclick="screen.value=(screen.value.slice(0,-1))"></td>
+            <td><input type="button" value="1" class="button" onclick="screen.value+='1'"></td>
+            <td><input type="button" value="2" class="button" onclick="screen.value+='2'"></td>
+            <td><input type="button" value="3" class="button" onclick="screen.value+='3'"></td>
+            <td  rowspan="2"><input type="button" value="+" class="button bigbutton stepr" onclick="screen.value+='+'"></td>
+             <td rowspan="2"><input type="button" value="=" class="button bigbutton" onclick="screen.value=eval(screen.value)"></td>
+           </tr>
+          
+           <tr>
+            <td><input type="button" value="C" class="button stepl" onclick="screen.value=''"></td>
+            <td><input type="button" value="0" class="button" onclick="screen.value+='0'"></td>
+            <td><input type="button" value="00" class="button" onclick="screen.value+='00'"></td>
+            <td><input type="button" value="." class="button" onclick="screen.value+='.'"></td>
+           </tr>
+          </table>
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
